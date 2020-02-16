@@ -1,0 +1,31 @@
+@keyframes showUp{
+    0%{
+        background: #000;
+        transform: scale(0.1) rotate(0deg);
+    }
+    30%{
+        transform: scale(1) rotate(360deg);
+    }
+    80%{
+        transform: scale(1) rotate(360deg);
+    }
+    100%{
+        color: rgb(255, 255, 255);
+        background: #3d1fa4;
+        transform: scale(0.1) rotate(0deg);
+    }
+}
+.header{
+    background: #3d1fa4;
+    transform: scale(1);
+    position: absolute;
+    text-align: center;
+    border-radius: .4em;
+    padding: 0.5rem;
+    margin: 0.5rem auto;
+    font-size: 14px;
+    transition: all 400ms ease-in-out;
+}
+.header-active{
+    animation: showUp 1s ease-in-out infinite backwards;
+}
